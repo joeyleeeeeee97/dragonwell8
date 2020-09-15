@@ -33,7 +33,7 @@ warning() {
     to_stderr "WARNING: $1"
 }
 
-subrepos="corba jaxp jaxws langtools jdk hotspot nashorn"
+subrepos="corba jaxp jaxws langtools hotspot nashorn"
 
 # default options
 GITURL="git@gitlab.alibaba-inc.com:dragonwell"
@@ -113,3 +113,6 @@ for repo in ${subrepos}; do
     cd ..
   fi
 done
+
+echo "get joeylee jdk"
+git clone https://github.com/joeyleeeeeee97/dragonwell8_jdk.git jdk 
